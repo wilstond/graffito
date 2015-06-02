@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2-Jun-2015, 1:17:01 PM
+    Author     : Ninja
+*/
+
+#bg_image {
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    background-image: url('https://static.pexels.com/photos/4439/city-art-graffiti-wall.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+#logo {
+    position: absolute;
+    top: 38%;
+    left: 36%;
+    background-color: rgba(255, 255, 255, .93);
+
+}
+
+.container-fluid {
+    padding: 0;
+}

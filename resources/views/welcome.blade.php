@@ -1,4 +1,4 @@
-<html>
+<!--<html>
 	<head>
 		<title>Laravel</title>
 		
@@ -45,4 +45,18 @@
 			</div>
 		</div>
 	</body>
-</html>
+</html>-->
+
+
+@extends('layouts.main')
+
+@section('content')
+<header>
+            <div id="bg_image">
+                
+            </div>
+            <div id="logo">
+                <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
+            </div>
+        </header>
+@endsection
