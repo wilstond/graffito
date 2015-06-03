@@ -20,7 +20,7 @@
     </head>
     <body>
 
-        <div id="wrapper">
+        <div id="wrapper" class="toggled">
 
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
