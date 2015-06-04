@@ -53,7 +53,7 @@
 @section('content')
 <header>
     <div id="bg_image">
-
+<!--        <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />-->
     </div>
     <div id="logo">
         <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
