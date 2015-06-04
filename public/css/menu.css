@@ -7,8 +7,8 @@
 /* Toggle Styles */
 
 #wrapper {
-  //  padding-left: 0;
-   padding-left: 250px;
+    //  padding-left: 0;
+    padding-left: 250px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -16,15 +16,15 @@
 }
 
 #wrapper.toggled {
-   // padding-left: 250px;
-   padding-left: 0;
+    // padding-left: 250px;
+    padding-left: 0;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     left: 250px;
-   // width: 0;
+    // width: 0;
     width: 250px;
     height: 100%;
     margin-left: -250px;
@@ -37,23 +37,23 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-   // width: 250px;
+    // width: 250px;
     width: 0;
 }
 
 #page-content-wrapper {
     width: 100%;
-   // position: absolute;
+    // position: absolute;
     position: relative;
-/*    padding: 15px;*/
+    /*    padding: 15px;*/
 }
 
 #wrapper.toggled #page-content-wrapper {
-/*    position: absolute;
-    margin-right: -250px;*/
-  
-   position: relative;
-   margin-right: 0;
+    /*    position: absolute;
+        margin-right: -250px;*/
+
+    position: relative;
+    margin-right: 0;
 }
 
 /* Sidebar Styles */
@@ -103,6 +103,50 @@
     color: #fff;
     background: none;
 }
+
+//This takes away the dots infront of the images in the grid
+
+ul {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+ul li {     
+    list-style:none;
+    margin-bottom:25px;           
+}
+ul li img {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburg {
+    position: fixed;
+    z-index: 2;
+}
+
+col-md-4 col-sm-12 col-xs-12 {
+    margin: 0;
+    padding: 0;
+}
+
+.row li {
+    margin: 0;
+    padding: 0;
+}
+
+.row ul {
+    margin: 0;
+    padding: 0;
+}
+
+.col-lg-12 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
 /*
 @media(min-width:768px) {
 

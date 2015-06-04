@@ -18,8 +18,6 @@ and open the template in the editor.
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: -1;
-    border: 1px solid red;
-
 }
 
 #logo {
@@ -40,12 +38,9 @@ and open the template in the editor.
 .container-fluid {
     padding: 0;
     position: relative;
-        border: 1px solid red;
-
 }
 
 header {
-        border: 1px solid yellow;
 /*        width: 100vw;
         height: 100vw;*/
 

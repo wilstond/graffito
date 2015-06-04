@@ -6233,16 +6233,3 @@ label,
   font-weight: 300;
 }
 
-//This takes away the dots infront of the images in the grid
-
-ul {         
-          padding:0 0 0 0;
-          margin:0 0 0 0;
-      }
-      ul li {     
-          list-style:none;
-          margin-bottom:25px;           
-      }
-      ul li img {
-          cursor: pointer;
-      }
