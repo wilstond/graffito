@@ -27,30 +27,23 @@
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
                         <a href="#">
-                            Start Bootstrap
+                            Graffito 
                         </a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="#">Explore</a>
                     </li>
                     <li>
-                        <a href="#">Shortcuts</a>
+                        <a href="#">Contribute</a>
                     </li>
                     <li>
-                        <a href="#">Overview</a>
+                        <a href="#">Tour</a>
                     </li>
                     <li>
-                        <a href="#">Events</a>
+                        <a href="#">Info</a>
                     </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                    
+                    
                 </ul>
             </div>
             <!-- /#sidebar-wrapper -->
@@ -63,7 +56,7 @@
                             <div>
                                 @yield('content')
                             </div>
-                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                            <a href="#menu-toggle"  id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a>
                         </div>
                     </div>
                 </div>
