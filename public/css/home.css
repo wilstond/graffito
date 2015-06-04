@@ -9,20 +9,22 @@ and open the template in the editor.
 */
 
 #bg_image {
-    position: fixed;
+    position: relative;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background-image: url('https://static.pexels.com/photos/4439/city-art-graffiti-wall.jpg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: -1;
+        border: 1px solid red;
+
 }
 
 #logo {
     position: absolute;
-    top: 38%;
+    top: 15%;
     left: 36%;
     background-color: rgba(255, 255, 255, .93);
 
@@ -30,4 +32,14 @@ and open the template in the editor.
 
 .container-fluid {
     padding: 0;
+    position: relative;
+        border: 1px solid red;
+
+}
+
+header {
+        border: 1px solid yellow;
+/*        width: 100vw;
+        height: 100vw;*/
+
 }
