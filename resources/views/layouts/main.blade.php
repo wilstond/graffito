@@ -53,14 +53,7 @@
             <div id="page-content-wrapper">
                 
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div>
-                                @yield('content')
-                            </div>
-                            
-                        </div>
-                    </div>
+                    @yield('content')
                 </div>
             </div>
             <!-- /#page-content-wrapper -->
@@ -72,7 +65,8 @@
         <script src="{{ asset('js/jquery.js') }}"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+<!--        <script src="js/bootstrap.min.js"></script>-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
         <!-- Menu Toggle Script -->
         <script>

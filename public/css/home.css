@@ -36,8 +36,9 @@ and open the template in the editor.
     }
 
 .container-fluid {
-    padding: 0;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -45,3 +46,12 @@ header {
         height: 100vw;*/
 
 }
+
+#trending {
+    
+}
+
+    #trending ul {
+        margin: 0;
+        padding: 0;
+    }
