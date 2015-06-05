@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('css/home.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
