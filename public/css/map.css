@@ -1,5 +1,5 @@
 #map_canvas{
-    height:300px;
-    width:399px;
+    height:100vh;
+    width:100vw;
     background-color: grey;
 }
