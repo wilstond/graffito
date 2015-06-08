@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('explore', 'MapController@explore');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
@@ -25,3 +27,4 @@ Route::get('about', 'WelcomeController@about');
 Route::get('contact', 'WelcomeController@contact');
 
 Route::get('products', 'ProductController@products');
+

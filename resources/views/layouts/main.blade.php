@@ -16,7 +16,8 @@
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('css/home.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
-
+        <link href="{{ asset('css/map.css') }}" type="text/css" rel="stylesheet" >      
+        
     </head>
     <body>
 
@@ -32,7 +33,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">Explore</a>
+                        <a href="{{url('explore')}}">Explore</a>
                     </li>
                     <li>
                         <a href="#">Contribute</a>
@@ -75,13 +76,9 @@ $("#menu-toggle").click(function (e) {
     $("#wrapper").toggleClass("toggled");
 });
         </script>
-
-
-
-
-
-
-
+  <!--GOOGLE MAP--> 
+   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
+   <script src="{{asset('js/map.js')}}"></script>
 
 
     </body>
