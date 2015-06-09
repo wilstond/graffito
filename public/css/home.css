@@ -30,10 +30,10 @@ header {
 #logo {
     
     position: absolute;
-    width: 24vw;
-    top: 45vh;
-    left: 38vw;
-    background-color: rgba(255, 255, 255, .93);
+    width: 46vw;
+    top: 39vh;
+    left: 27vw;
+    //background-color: rgba(255, 255, 255, .93);
     text-align: center;
 
 }
