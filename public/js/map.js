@@ -53,7 +53,7 @@ var map;
 
         var options = {
             map: map,
-            position: new google.maps.LatLng(60, 105),
+            position: new google.maps.LatLng(myLatlng),
             content: content
         };
 
