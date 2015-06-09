@@ -28,3 +28,7 @@ Route::get('contact', 'WelcomeController@contact');
 
 Route::get('products', 'ProductController@products');
 
+<<<<<<< HEAD
+=======
+Route::get('admin', 'AdminController@index');
+>>>>>>> origin/admin
