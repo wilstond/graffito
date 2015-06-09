@@ -25,3 +25,5 @@ Route::get('about', 'WelcomeController@about');
 Route::get('contact', 'WelcomeController@contact');
 
 Route::get('products', 'ProductController@products');
+
+Route::get('admin', 'AdminController@index');
