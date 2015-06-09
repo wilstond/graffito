@@ -14,18 +14,17 @@
         <!-- Latest compiled and minified JavaScript -->
 <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
-        <link href="{{ asset('css/home.css') }}" type="text/css" rel="stylesheet" >
+        <link href="{{ asset('css/admin.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
-        <link href="{{ asset('css/map.css') }}" type="text/css" rel="stylesheet" >      
-        
+
     </head>
     <body>
 
         <div id="wrapper" class="toggled">
-        <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
+            <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
-                
+
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
                         <a href="#">
@@ -33,9 +32,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('explore')}}">Explore</a>
+                        <a href="auth/logout">Logout</a>
                     </li>
-                    <li>
+<!--                    <li>
                         <a href="#">Contribute</a>
                     </li>
                     <li>
@@ -43,18 +42,16 @@
                     </li>
                     <li>
                         <a href="#">Info</a>
-                    </li>
-                    <li>
-                        <a href="auth/login">Admin Login</a>
-                    </li>
-                    
+                    </li>-->
+
+
                 </ul>
             </div>
             <!-- /#sidebar-wrapper -->
 
             <!-- Page Content -->
             <div id="page-content-wrapper">
-                
+
                 <div class="container-fluid">
                     @yield('content')
                 </div>
@@ -78,10 +75,6 @@ $("#menu-toggle").click(function (e) {
     $("#wrapper").toggleClass("toggled");
 });
         </script>
-  <!--GOOGLE MAP--> 
-   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
-   <script src="{{asset('js/map.js')}}"></script>
-
 
     </body>
 </html>
