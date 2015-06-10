@@ -54,5 +54,15 @@ class WelcomeController extends Controller {
             dd($offices);
             return view('contactus');   
 	}
+        
+         public function info()
+        {
+            return view('info');
+        }
+        
+            public function tour()
+        {
+            return view('tour');
+        }
 
 }
