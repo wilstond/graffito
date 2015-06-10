@@ -36,7 +36,7 @@
                         <a href="{{url('explore')}}">Explore</a>
                     </li>
                     <li>
-                        <a href="#">Contribute</a>
+                        <a href="{{url('contribute')}}">Contribute</a>
                     </li>
                     <li>
                         <a href="#">Tour</a>
