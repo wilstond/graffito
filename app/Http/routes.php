@@ -29,3 +29,7 @@ Route::get('contact', 'WelcomeController@contact');
 Route::get('products', 'ProductController@products');
 
 Route::get('admin', 'AdminController@index');
+
+Route::get('contribute', 'ContributeController@contribute');
+
+Route::post('upload', 'ContributeController@upload');
