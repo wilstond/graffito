@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" >
         <!-- Latest compiled and minified JavaScript -->
 <!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
@@ -39,10 +38,10 @@
                         <a href="{{url('contribute')}}">Contribute</a>
                     </li>
                     <li>
-                        <a href="#">Tour</a>
+                        <a href="{{url('tour')}}">Tour</a>
                     </li>
                     <li>
-                        <a href="#">Info</a>
+                        <a href="{{url('info')}}">Info</a>
                     </li>
                     <li>
                         <a href="auth/login">Admin Login</a>

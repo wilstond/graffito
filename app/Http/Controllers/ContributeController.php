@@ -9,9 +9,10 @@ use Session;
 
 class ContributeController extends Controller {
     
+
     public function contribute() 
     {
-        return view('contribute');
+        return View('contribute');
     }
     
     public function upload(Request $request)
