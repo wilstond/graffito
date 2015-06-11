@@ -2,6 +2,14 @@
 
 @section('content')
 
-<h1>Tour</h1>
+
+<div class="container">
+    <div class="container-fluid">
+        
+        <br /><br />
+        <h1>Tour</h1>
+
+    </div>
+</div>
 
 @endsection

@@ -1,9 +1,11 @@
 @extends('layouts.main')
-
 @section('content')
 
-        <h1>Contribute to Graffito</h1>
+<div class="container">
+    <div class="container-fluid">
 
+        <br /><br />
+        <h1>Contribute to Graffito</h1>
 
         {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
 
@@ -26,5 +28,7 @@
                  </div>
 
          {!! Form::close() !!}
+    </div><!--end container-fluid div-->
+</div> <!--end container div-->
 
- @endsection
+@endsection

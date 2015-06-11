@@ -21,13 +21,32 @@ class ContributeController extends Controller {
         
         //validation
         
+//         $this->validate($request,
+//                [
+//                  'location' => 'required',
+//                   'image' => 'required'  
+//                ]
+//                );
+//        $inputs = $request->all();
+//        Uploads::create($inputs);
+        
+//        $cd = new Cd;
+//        $cd->titel = $inputs['titel'];
+//        $cd->interpret = $inputs['interpret'];
+//        $cd->jahr = $inputs['jahr'];
+//        
+//        $cd->save();
+       // return Redirect('contribute');
+        
 
+        
+        
         if(Input::hasFile('image'))
         {
             $file = Input::file('image');
             
             
-            $file = $file->move(public_path().'..../public/images/graffiti/', 
+            $file = $file->move(public_path().'.../public/images/graffiti/', 
                     time().'-'.$file->getFileOriginalName());
             
             $post->image = $file->getRealPath();
@@ -37,25 +56,25 @@ class ContributeController extends Controller {
 
     }
     
-    public function move($directory, $name = null)
-    {
-        if ($this->isValid()) {
-            if ($this->test) {
-                return parent::move($directory, $name);
-            }
-            $target = $this->getTargetFile($directory, $name);
-            
-            if(!@move_uploaded_file($this->getPathname(), $target)) {
-                $error = error_get_last();
-                throw new FileException(sprintf('Could not move file "%s" to "%s" (%s)', 
-                        $this->getPathname(), $target, strip_tags($str)));
-            }
-            @chmod($target, 0666 & ~unmask());
-            
-            return $target;
-            
-        }
-    }
+//    public function move($directory, $name = null)
+//    {
+//        if ($this->isValid()) {
+//            if ($this->test) {
+//                return parent::move($directory, $name);
+//            }
+//            $target = $this->getTargetFile($directory, $name);
+//            
+//            if(!@move_uploaded_file($this->getPathname(), $target)) {
+//                $error = error_get_last();
+//                throw new FileException(sprintf('Could not move file "%s" to "%s" (%s)', 
+//                        $this->getPathname(), $target, strip_tags($str)));
+//            }
+//            @chmod($target, 0666 & ~unmask());
+//            
+//            return $target;
+//            
+//        }
+//    }
     
     
 //    public function upload(Request $request)
