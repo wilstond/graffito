@@ -19,6 +19,7 @@
 
     </head>
     <body>
+@include('partials.header')
 
         <div id="wrapper" class="toggled">
             <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
