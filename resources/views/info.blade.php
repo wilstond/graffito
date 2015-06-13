@@ -27,7 +27,7 @@
             <div>Graffito will take the museum experience outdoors, creating a celebration of 
                 street art, the artists and past works in the city of Toronto. </div>
             <br />
-            <div>Explore existing entries, Contribute new ones, and Tour Toronto. </div>
+            <div>Explore existing entries, Contribute new ones, and Explore Toronto. </div>
 
             <br />
 
