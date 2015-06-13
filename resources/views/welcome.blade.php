@@ -8,6 +8,10 @@
     <div id="logo">
         <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
     </div>
+    
+    <div id="description" >
+    <h1>Toronto's street art, archived.</h1>
+    </div>
 </header>
 
 <div id="trending">

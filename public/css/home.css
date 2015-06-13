@@ -15,6 +15,23 @@ header {
         padding: 0;
 }
 
+    html, body {
+    font-size: 1em;
+}
+
+#description h1 {
+font-family: 'Raleway', sans-serif;
+position: absolute;
+    width: 46vw;
+    top: 52vh;
+    left: 27vw;
+    text-align: center;
+    color: lightgrey;
+    //color: #26BFD4;
+    font-size: 2em;
+    letter-spacing: .08em;
+}
+
 #blackoverlay {
     width: 100%;
     height: 100vh;
@@ -46,7 +63,7 @@ header {
     
     position: absolute;
     width: 46vw;
-    top: 39vh;
+    top: 35vh;
     left: 27vw;
     //background-color: rgba(255, 255, 255, .93);
     text-align: center;

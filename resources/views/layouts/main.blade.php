@@ -17,8 +17,8 @@
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/map.css') }}" type="text/css" rel="stylesheet" >    
         <link href="{{ asset('css/header.css') }}" type="text/css" rel="stylesheet" >
-
         
+<link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>        
     </head>
     <body>
 
