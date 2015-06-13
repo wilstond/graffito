@@ -1,30 +1,36 @@
+@extends('layouts.main')
 
-CONTRIBUTE
+@section('content')
 
- {!! Form::open(['url' => 'upload', 'method'=>'POST', 'files'=>true]) !!}
- 
- 
- <p>{!! $errors->first('image')!!}</p>
-	@if(Session::has('error'))
-	<p class="errors">{!! Session::get('error') !!}</p>
-	@endif
- 
- 
- <div>
+        <h1>Contribute to GraffiTO</h1>
 
-     {!! Form::label('Image') !!}
-     {!! Form::file('Image') !!}
-     
-</div>
-<div>
+        <!-- {!! Form::open(['url' => 'upload', 'method'=>'POST', 'files'=>true]) !!}-->
 
-     {!! Form::label('Name this location') !!}
-     {!! Form::text('Name this location') !!} 
-     
-</div>
+        <!-- <p>{!! $errors->first('image')!!}</p>
+                @if(Session::has('error'))
+                <p class="errors">{!! Session::get('error') !!}</p>
+                @endif-->
 
- <div>
-     {!! Form::submit('Contribute', array('class'=>'send-btn')) !!}
- </div>
+        {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
 
- {!! Form::close() !!}
+                <div class='form-group'>
+
+                     {!! Form::label('location', 'Location: ') !!}
+                     {!! Form::text('location', null, ['class' => 'form-control']) !!} 
+
+                </div>
+
+                 <div class='form-group'>
+
+                     {!! Form::label('image', 'Image: ') !!}
+                     {!! Form::file('Image') !!}
+
+                </div>
+
+                 <div class='form-group'>
+                     {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}
+                 </div>
+
+         {!! Form::close() !!}
+
+ @endsection

@@ -33,3 +33,9 @@ Route::get('admin', 'AdminController@index');
 Route::get('contribute', 'ContributeController@contribute');
 
 Route::post('upload', 'ContributeController@upload');
+
+Route::resource('posts', 'ContributeController');
+
+Route::get('info', 'WelcomeController@info');
+
+Route::get('tour', 'WelcomeController@tour');
