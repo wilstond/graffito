@@ -37,13 +37,9 @@
                     <li>
                         <a href="{{url('contribute')}}">Contribute</a>
                     </li>
+                
                     <li>
-<<<<<<< HEAD
-=======
-                        <a href="{{url('tour')}}">Tour</a>
-                    </li>
-                    <li>
->>>>>>> master
+
                         <a href="{{url('info')}}">Info</a>
                     </li>
                     <li>
