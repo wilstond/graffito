@@ -38,9 +38,6 @@
                         <a href="{{url('contribute')}}">Contribute</a>
                     </li>
                     <li>
-                        <a href="{{url('tour')}}">Tour</a>
-                    </li>
-                    <li>
                         <a href="{{url('info')}}">Info</a>
                     </li>
                     <li>
