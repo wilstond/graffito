@@ -24,22 +24,15 @@ class ContributeController extends Controller {
         
         //validation
         
-//         $this->validate($request,
-//                [
-//                  'location' => 'required',
-//                   'image' => 'required'  
-//                ]
-//                );
-//        $inputs = $request->all();
-//        Uploads::create($inputs);
+         $this->validate($request,
+                [
+                  'location' => 'required',
+                   'Image' => 'required'  
+                ]
+                );
+      /*  $inputs = $request->all();
+        Uploads::create($inputs);*/
         
-//        $cd = new Cd;
-//        $cd->titel = $inputs['titel'];
-//        $cd->interpret = $inputs['interpret'];
-//        $cd->jahr = $inputs['jahr'];
-//        
-//        $cd->save();
-       // return Redirect('contribute');
         
         $destinationPath = '';
         $filename = '';

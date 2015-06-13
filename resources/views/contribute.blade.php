@@ -18,7 +18,7 @@
 
                  <div class='form-group'>
 
-                     {!! Form::label('image', 'Image: ') !!}
+                     {!! Form::label('Image', 'Image: ') !!}
                      {!! Form::file('Image') !!}
 
                 </div>
@@ -26,6 +26,11 @@
                  <div class='form-group'>
                      {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}
                  </div>
+        @if($errors->any())
+            @foreach($errors->all() as $error)
+                 <li>{{$error}}</li>
+            @endforeach
+        @endif 
 
          {!! Form::close() !!}
     </div><!--end container-fluid div-->
