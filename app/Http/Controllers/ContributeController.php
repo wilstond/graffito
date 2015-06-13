@@ -1,9 +1,12 @@
 <?php namespace App\Http\Controllers;
 
+use App\Uploads;
+use Illuminate\Http\Request;
+
 use Input;
 use Validator;
 use Redirect;
-use Request;
+//use Request;
 use Session;
 //use Illuminate\Http\Request;
 
@@ -16,7 +19,7 @@ class ContributeController extends Controller {
     }
     
     
-    public function store()
+    public function store(Request $request)
     {
         
         //validation
@@ -38,21 +41,28 @@ class ContributeController extends Controller {
 //        $cd->save();
        // return Redirect('contribute');
         
-
+        $destinationPath = '';
+        $filename = '';
         
         
-        if(Input::hasFile('image'))
+        if(Input::hasFile('Image'))
         {
-            $file = Input::file('image');
+            $file = Input::file('Image');
+            $destinationPath = public_path().'/images/graffiti/';
+            $filename = $file->getClientOriginalName();
+            $file->move($destinationPath, $filename);
             
             
-            $file = $file->move(public_path().'.../public/images/graffiti/', 
-                    time().'-'.$file->getFileOriginalName());
-            
-            $post->image = $file->getRealPath();
+//            $uploadSuccess = $file->move(public_path().'/images/graffiti/', 
+//                   time().'-'.$file->getFileOriginalName());
+//            
+//            $post->image = $file->getRealPath();
+            return "done";
             
         }
-        return 'Done';
+        else{
+            return "nooooo";
+        }
 
     }
     
