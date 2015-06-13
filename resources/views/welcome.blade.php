@@ -3,6 +3,7 @@
 @section('content')
 <header>
     <div id="bg_image"></div>
+    <div id="blackoverlay" ></div>
     
     <div id="logo">
         <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
