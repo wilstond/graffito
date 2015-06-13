@@ -2,7 +2,6 @@
 
 @section('content')
 
-<<<<<<< HEAD
 
 
 <div class="container">
@@ -41,9 +40,6 @@
 
 
 
-=======
-<h1>Info</h1>
->>>>>>> master
 
 @endsection
 

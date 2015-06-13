@@ -1,5 +1,5 @@
 @extends('layouts.main')
-<<<<<<< HEAD
+
 @section('content')
 
 <div class="container">
@@ -7,7 +7,7 @@
 
         <br /><br />
         <h1>Contribute to Graffito</h1>
-=======
+
 
 @section('content')
 
@@ -19,7 +19,7 @@
                 @if(Session::has('error'))
                 <p class="errors">{!! Session::get('error') !!}</p>
                 @endif-->
->>>>>>> master
+
 
         {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
 
@@ -32,11 +32,11 @@
 
                  <div class='form-group'>
 
-<<<<<<< HEAD
+
                      {!! Form::label('Image', 'Image: ') !!}
-=======
+
                      {!! Form::label('image', 'Image: ') !!}
->>>>>>> master
+
                      {!! Form::file('Image') !!}
 
                 </div>
@@ -44,7 +44,7 @@
                  <div class='form-group'>
                      {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}
                  </div>
-<<<<<<< HEAD
+
         @if($errors->any())
             @foreach($errors->all() as $error)
                  <li>{{$error}}</li>
@@ -56,9 +56,9 @@
 </div> <!--end container div-->
 
 @endsection
-=======
+
 
          {!! Form::close() !!}
 
  @endsection
->>>>>>> master
+
