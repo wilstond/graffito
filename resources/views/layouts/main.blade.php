@@ -15,7 +15,9 @@
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('css/home.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
-        <link href="{{ asset('css/map.css') }}" type="text/css" rel="stylesheet" >      
+        <link href="{{ asset('css/map.css') }}" type="text/css" rel="stylesheet" >    
+        <link href="{{ asset('css/header.css') }}" type="text/css" rel="stylesheet" >
+
         
     </head>
     <body>

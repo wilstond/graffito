@@ -1,9 +1,13 @@
-header {
+#header-mini {
     width: 100%;
     background-color: black;
+    text-align: center;
 }
 
-#header-logo {
-    width: 250px;
+#header-logo a img{
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    
 }
 
