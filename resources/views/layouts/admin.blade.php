@@ -27,8 +27,8 @@
 
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="#">
-                            Graffito 
+                        <a href="{{url("admin")}}">
+                            Graffito Admin
                         </a>
                     </li>
                     <li>
