@@ -3,9 +3,14 @@
 @section('content')
 <header>
     <div id="bg_image"></div>
+    <div id="blackoverlay" ></div>
     
     <div id="logo">
         <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
+    </div>
+    
+    <div id="description" >
+    <h1>Toronto's street art, archived.</h1>
     </div>
 </header>
 

@@ -19,6 +19,7 @@
 
     </head>
     <body>
+@include('partials.header')
 
         <div id="wrapper" class="toggled">
             <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
@@ -27,8 +28,8 @@
 
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="#">
-                            Graffito 
+                        <a href="{{url("admin")}}">
+                            Graffito Admin
                         </a>
                     </li>
                     <li>

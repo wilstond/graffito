@@ -2,6 +2,8 @@
 
 @section('content')
 
+@include('partials.header')
+
 <div id="map_canvas">
     
 </div>

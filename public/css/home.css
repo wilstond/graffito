@@ -15,6 +15,38 @@ header {
         padding: 0;
 }
 
+    html, body {
+    font-size: 1em;
+}
+
+#description h1 {
+font-family: 'Raleway', sans-serif;
+position: absolute;
+    width: 46vw;
+    top: 52vh;
+    left: 27vw;
+    text-align: center;
+    color: lightgrey;
+    //color: #26BFD4;
+    font-size: 2em;
+    letter-spacing: .08em;
+}
+
+#blackoverlay {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .61);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    z-index: -1;
+}
+
 #bg_image {
     position: relative;
     width: 100%;
@@ -24,14 +56,14 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 #logo {
     
     position: absolute;
     width: 46vw;
-    top: 39vh;
+    top: 35vh;
     left: 27vw;
     //background-color: rgba(255, 255, 255, .93);
     text-align: center;
@@ -49,10 +81,13 @@ header {
 }
 
 #trending {
-    
+    //background-color: rgba( 0, 0, 0, 0);
+    background-color: black;
 }
 
     #trending ul {
         margin: 0;
         padding: 0;
+        //background-color: rgba( 0, 0, 0, 0);
+
     }

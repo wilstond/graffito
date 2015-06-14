@@ -1,0 +1,13 @@
+#header-mini {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+#header-logo a img{
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    
+}
+
