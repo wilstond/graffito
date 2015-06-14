@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div class="container">
     <div class="container-fluid">
 
@@ -11,7 +12,10 @@
 
 @section('content')
 
-        <h1>Contribute to GraffiTO</h1>
+@include('partials.header')
+
+
+        <h1>Contribute to Graffito</h1>
 
         <!-- {!! Form::open(['url' => 'upload', 'method'=>'POST', 'files'=>true]) !!}-->
 

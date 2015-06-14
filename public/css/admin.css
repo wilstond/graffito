@@ -49,6 +49,16 @@ main {
     left: 15%;
     width: 70%;
     height: 80vh;
-    background-color: rgba(255,255,255,0.8);
+/*    background-color: rgba(255,255,255,0.8);*/
+    text-align: center;
+}
+
+.login {
+    position: absolute;
+    top: 15vh;
+    left: 15%;
+    width: 70%;
+    height: 80vh;
+/*    background-color: rgba(255,255,255,0.8);*/
     text-align: center;
 }
