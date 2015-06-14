@@ -22,7 +22,8 @@ class ContributeController extends Controller {
          $this->validate($request,
                 [
                   'location' => 'required',
-                   'Image' => 'required'  
+                   'Image' => 'required', 
+                   'Image' => 'image'
                 ]
                 );
       /*  $inputs = $request->all();

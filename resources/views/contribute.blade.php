@@ -36,9 +36,6 @@
 
                  <div class='form-group'>
 
-
-                     {!! Form::label('Image', 'Image: ') !!}
-
                      {!! Form::label('image', 'Image: ') !!}
 
                      {!! Form::file('Image') !!}
