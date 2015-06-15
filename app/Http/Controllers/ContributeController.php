@@ -26,9 +26,6 @@ class ContributeController extends Controller {
                    'Image' => 'image'
                 ]
                 );
-      /*  $inputs = $request->all();
-        Uploads::create($inputs);*/
-        
         
         $destinationPath = '';
         $filename = '';
@@ -40,8 +37,15 @@ class ContributeController extends Controller {
             $destinationPath = public_path().'/images/graffiti/';
             $filename = $file->getClientOriginalName();
             $file->move($destinationPath, $filename);
+            
+           // $inputs = $request->all();
+           // Uploads::create($inputs);
+            
+//            $upload = new Uploads;
+//            $upload->image = $filename;
+//            $upload->save();
 
-            return "done";
+            return "yess";
             
         }
         else{
