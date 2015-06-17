@@ -16,6 +16,7 @@
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('css/admin.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     </head>
     <body>
