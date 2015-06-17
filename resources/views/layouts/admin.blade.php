@@ -16,14 +16,16 @@
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('css/admin.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
+        <link href="{{ asset('css/header.css') }}" type="text/css" rel="stylesheet" >
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     </head>
     <body>
-@include('partials.header')
 
         <div id="wrapper" class="toggled">
+            
             <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
+            
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
 

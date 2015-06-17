@@ -1,14 +1,12 @@
 @extends('layouts.admin')
 
 @section('content')
+
+@include('partials.header')
+
 <header>
     <div id="bg_image"></div>
-    
-    <div id="bg_overlay"></div>
-    
-    <div id="logo">
-        <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
-    </div>
+    <div id="blackoverlay" ></div>
 </header>
 
 <main>
