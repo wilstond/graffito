@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\office;
+use DB;
 
 class WelcomeController extends Controller {
 
@@ -32,7 +33,12 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+            
+            $trending = DB::table('art')->where('approval_status','=', '2')->orderBy('views','desc')->take(9)->get();
+            
+		return view('welcome')->with('trending', $trending);
+                
+                
 	}
         
         public function about()
