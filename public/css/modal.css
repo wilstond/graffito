@@ -1,0 +1,9 @@
+#modalwindow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 80%;
+    min-height: 80vh;
+    z-index: 4;
+}

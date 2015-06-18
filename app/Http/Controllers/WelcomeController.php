@@ -71,4 +71,9 @@ class WelcomeController extends Controller {
             return view('tour');
         }
 
+        public function modal()
+        {
+            
+        }
+        
 }

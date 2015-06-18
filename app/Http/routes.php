@@ -45,3 +45,5 @@ Route::resource('posts', 'ContributeController');
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');
+
+Route::get('modal/{url}', 'WelcomeController@modal');
