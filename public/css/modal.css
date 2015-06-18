@@ -1,4 +1,4 @@
-#modalwindow {
+/*#modalwindow {
     display: none;
     position: absolute;
     top: 0;
@@ -6,4 +6,19 @@
     min-width: 80%;
     min-height: 80vh;
     z-index: 4;
+}*/
+
+#myModal {
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#myModal .modal-body {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+#myModal .modal-body img {
+    
 }
