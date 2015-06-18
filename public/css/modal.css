@@ -9,13 +9,13 @@
 }*/
 
 #myModal {
-    width: 100%;
     background-color: rgba(0,0,0,0.8);
+    z-index: 9999;
+    cursor: pointer;
 }
 
 #myModal .modal-body {
     margin: 0 auto;
-    width: 80%;
     text-align: center;
 }
 
