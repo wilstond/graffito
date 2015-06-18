@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Http\Controllers;
 
@@ -56,6 +56,13 @@ class AdminController extends Controller {
                 
         return redirect('admin');
         
+    }
+    
+    public function reported() {
+        
+        $posts = DB::table('art')->where('report_count','>=', '5')->get();
+        
+        return view('admin.home')->with('posts', $posts);
     }
 
 }

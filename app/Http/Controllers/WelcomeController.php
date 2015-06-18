@@ -34,7 +34,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{
             
-            $trending = DB::table('art')->where('approval_status','=', '2')->orderBy('views','desc')->take(9)->get();
+            $trending = DB::table('art')->where('approval_status','=', '2')->orderBy('view_count','desc')->take(9)->get();
             
 		return view('welcome')->with('trending', $trending);
                 

@@ -34,6 +34,8 @@ Route::get('admin/publish/{id}', 'AdminController@publish');
 
 Route::get('admin/delete/{id}', 'AdminController@delete');
 
+Route::get('admin/reported', 'AdminController@reported');
+
 Route::get('contribute', 'ContributeController@contribute');
 
 Route::post('upload', 'ContributeController@upload');
