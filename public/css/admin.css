@@ -14,6 +14,7 @@ header {
 }
 
 #bg_image {
+    position: fixed;
     width: 100%;
     height: 100vh;
     background-image: url('https://static.pexels.com/photos/4439/city-art-graffiti-wall.jpg');
@@ -26,11 +27,12 @@ header {
 
 
 #blackoverlay {
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-    position: absolute;
+/*    position: absolute;*/
     background-color: rgba(0, 0, 0, .61);
     background-position: center;
     background-attachment: fixed;

@@ -49,7 +49,7 @@
                         <a href="{{url('info')}}">Info</a>
                     </li>
                     <li>
-                        <a href="auth/login">Admin Login</a>
+                        <a href="{{url('auth/login')}}">Admin Login</a>
                     </li>
                     
                 </ul>

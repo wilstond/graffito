@@ -31,12 +31,15 @@
 
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="{{url("admin")}}">
+                        <a href="{{url('admin')}}">
                             Graffito Admin
                         </a>
                     </li>
                     <li>
-                        <a href="auth/logout">Logout</a>
+                        <a href="{{url('admin/reported')}}">Reported Posts</a>
+                    </li>
+                    <li>
+                        <a href="{{url('auth/logout')}}">Logout</a>
                     </li>
 <!--                    <li>
                         <a href="#">Contribute</a>

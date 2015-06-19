@@ -36,6 +36,8 @@ Route::get('admin/delete/{id}', 'AdminController@delete');
 
 Route::get('admin/reported', 'AdminController@reported');
 
+Route::get('admin/unpublish/{id}', 'AdminController@unpublish');
+
 Route::get('contribute', 'ContributeController@contribute');
 
 Route::post('upload', 'ContributeController@upload');
@@ -45,5 +47,3 @@ Route::resource('posts', 'ContributeController');
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');
-
-Route::get('modal/{url}', 'WelcomeController@modal');

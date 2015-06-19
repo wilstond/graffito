@@ -62,7 +62,17 @@ class AdminController extends Controller {
         
         $posts = DB::table('art')->where('report_count','>=', '5')->get();
         
-        return view('admin.home')->with('posts', $posts);
+        return view('admin.reported')->with('posts', $posts);
+    }
+    
+    public function unpublish($id) {
+        
+        $post = art::find($id);
+        $post->approval_status = 3;
+        $post->save();
+                
+        return redirect('admin');
+        
     }
 
 }
