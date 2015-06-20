@@ -30,6 +30,14 @@ Route::get('products', 'ProductController@products');
 
 Route::get('admin', 'AdminController@index');
 
+Route::get('admin/publish/{id}', 'AdminController@publish');
+
+Route::get('admin/delete/{id}', 'AdminController@delete');
+
+Route::get('admin/reported', 'AdminController@reported');
+
+Route::get('admin/unpublish/{id}', 'AdminController@unpublish');
+
 Route::get('contribute', 'ContributeController@contribute');
 
 Route::post('upload', 'ContributeController@upload');

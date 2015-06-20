@@ -16,24 +16,30 @@
         <link href="{{ asset('css/app.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('css/admin.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
+        <link href="{{ asset('css/header.css') }}" type="text/css" rel="stylesheet" >
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     </head>
     <body>
-@include('partials.header')
 
         <div id="wrapper" class="toggled">
+            
             <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
+            
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
 
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="{{url("admin")}}">
+                        <a href="{{url('admin')}}">
                             Graffito Admin
                         </a>
                     </li>
                     <li>
-                        <a href="auth/logout">Logout</a>
+                        <a href="{{url('admin/reported')}}">Reported Posts</a>
+                    </li>
+                    <li>
+                        <a href="{{url('auth/logout')}}">Logout</a>
                     </li>
 <!--                    <li>
                         <a href="#">Contribute</a>
