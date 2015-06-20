@@ -86,6 +86,7 @@ $("#menu-toggle").click(function (e) {
    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
    <script src="{{asset('js/map.js')}}"></script>
    <script src="{{asset('js/modal.js') }}"></script>
+   <script src="{{asset('js/contribute.js')}}"></script>
 
 
     </body>
