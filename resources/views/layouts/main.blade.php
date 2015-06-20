@@ -17,10 +17,14 @@
         <link href="{{ asset('css/menu.css') }}" type="text/css" rel="stylesheet" >
         <link href="{{ asset('css/map.css') }}" type="text/css" rel="stylesheet" >    
         <link href="{{ asset('css/header.css') }}" type="text/css" rel="stylesheet" >
+        <link href="{{ asset('css/modal.css') }}" type="text/css" rel="stylesheet" >
         
-<link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>        
+<link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'> 
+
+
     </head>
     <body>
+        
 
         <div id="wrapper" class="toggled">
         <a href="#menu-toggle" class='hamburg' id="menu-toggle"><img src='{{ asset('images/hamburger.svg') }}'</a> 
@@ -45,7 +49,7 @@
                         <a href="{{url('info')}}">Info</a>
                     </li>
                     <li>
-                        <a href="auth/login">Admin Login</a>
+                        <a href="{{url('auth/login')}}">Admin Login</a>
                     </li>
                     
                 </ul>
@@ -81,7 +85,7 @@ $("#menu-toggle").click(function (e) {
   <!--GOOGLE MAP--> 
    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
    <script src="{{asset('js/map.js')}}"></script>
-
+   <script src="{{asset('js/modal.js') }}"></script>
 
     </body>
 </html>
