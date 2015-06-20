@@ -55,7 +55,8 @@
          {!! Form::close() !!}
     </div><!--end container-fluid div-->
 </div> <!--end container div-->
-
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/contribute.js') }}"></script>
 @endsection
 
 

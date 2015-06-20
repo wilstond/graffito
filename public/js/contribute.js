@@ -1,16 +1,17 @@
 $(document).ready(function(){
     
-  /* function getLocation(){*/
+   //function getLocation(){
 
        if(navigator.geolocation){
-           navigator.geolocation.getCurrentPosition(showPosition);
+           navigator.geolocation.getCurrentPosition(success);
+           
        } else {
            alert("Shit not supported");
        }
-   //}
-   
-   function showPosition(position){
-       alert(position.coords.latitude + ", " + position.coords.longitude);
+   //} 
+   function success(position){
+       position.coords.latitude 
+       position.coords.longitude;
    }
     
 });
