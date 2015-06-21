@@ -58,7 +58,13 @@ class ContributeController extends Controller {
         
         $latitude = Input::get('latitude');
         $longitude = Input::get('longitude');
-        return $location = array($latitude , $longitude);
+        
+        $url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&sensor=false";
+
+        $curlData=file_get_contents($url);
+        $address = json_decode($curlData);
+        $a=$address->results[0];
+        return explode(",",$a->formatted_address);
 
     }
  
