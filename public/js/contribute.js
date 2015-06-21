@@ -14,16 +14,19 @@ $(document).ready(function(){
        var longitude = position.coords.longitude;
        var base = "localhost/graffito/public/";
        
-//       $.ajax({
-//                    type: "GET",
-//                    url: base + 'contribute.php',
-//                    data: {latitude:latitude, longitude:longitude},
-//                   // data:"hello",
-//                    success: function(data)
-//                    {
-//                        alert(data);
-//                    }
-//                });
+//       $.post('location', {latitude:latitude, longitude:longitude}, function(data){              
+//                  console.log(data);
+//              });
+       
+       $.ajax({
+                    type: "POST",
+                    url: 'location',
+                    data: {latitude:latitude, longitude:longitude},
+                    success: function(data)
+                    {
+                        alert(data);
+                    }
+                });
    }
     
 });

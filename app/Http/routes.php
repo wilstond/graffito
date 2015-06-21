@@ -47,3 +47,11 @@ Route::resource('posts', 'ContributeController');
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');
+
+Route::post('location', 'ContributeController@Location');
+    
+//   echo "hi";  
+//    if(Request::ajax()){
+//        echo latitude;
+//    }
+//});
