@@ -56,9 +56,10 @@ class ContributeController extends Controller {
     
     public function Location(){
         
-        $post = Post::find(Input::get( 'latitude'));
-        echo $post . "success";
-        
+        $latitude = Input::get('latitude');
+        $longitude = Input::get('longitude');
+        return $location = array($latitude , $longitude);
+
     }
  
 }

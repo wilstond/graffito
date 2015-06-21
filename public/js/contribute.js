@@ -19,12 +19,12 @@ $(document).ready(function(){
 //              });
        
        $.ajax({
-                    type: "POST",
+                    type: "GET",
                     url: 'location',
                     data: {latitude:latitude, longitude:longitude},
                     success: function(data)
                     {
-                        alert(data);
+                        $('#location').attr('placeholder', data);
                     }
                 });
    }
