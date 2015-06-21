@@ -17,14 +17,6 @@
 
         <h1>Contribute to Graffito</h1>
 
-        <!-- {!! Form::open(['url' => 'upload', 'method'=>'POST', 'files'=>true]) !!}-->
-
-        <!-- <p>{!! $errors->first('image')!!}</p>
-                @if(Session::has('error'))
-                <p class="errors">{!! Session::get('error') !!}</p>
-                @endif-->
-
-
         {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
 
                 <div class='form-group'>

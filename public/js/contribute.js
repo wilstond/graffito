@@ -10,8 +10,20 @@ $(document).ready(function(){
        }
    //} 
    function success(position){
-       position.coords.latitude 
-       position.coords.longitude;
+       var latitude = position.coords.latitude; 
+       var longitude = position.coords.longitude;
+       var base = "localhost/graffito/public/";
+       
+//       $.ajax({
+//                    type: "GET",
+//                    url: base + 'contribute.php',
+//                    data: {latitude:latitude, longitude:longitude},
+//                   // data:"hello",
+//                    success: function(data)
+//                    {
+//                        alert(data);
+//                    }
+//                });
    }
     
 });
