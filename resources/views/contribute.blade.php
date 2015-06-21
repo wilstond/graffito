@@ -17,27 +17,16 @@
 
         <h1>Contribute to Graffito</h1>
 
-        <!-- {!! Form::open(['url' => 'upload', 'method'=>'POST', 'files'=>true]) !!}-->
-
-        <!-- <p>{!! $errors->first('image')!!}</p>
-                @if(Session::has('error'))
-                <p class="errors">{!! Session::get('error') !!}</p>
-                @endif-->
-
-
         {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
 
                 <div class='form-group'>
 
                      {!! Form::label('location', 'Location: ') !!}
-                     {!! Form::text('location', null, ['class' => 'form-control']) !!} 
+                     {!! Form::text('location', null,['class' => 'form-control', 'id' => 'location' ,'placeholder' => 'hello']) !!} 
 
                 </div>
 
                  <div class='form-group'>
-
-
-                     {!! Form::label('Image', 'Image: ') !!}
 
                      {!! Form::label('image', 'Image: ') !!}
 
@@ -58,7 +47,8 @@
          {!! Form::close() !!}
     </div><!--end container-fluid div-->
 </div> <!--end container div-->
-
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/contribute.js') }}"></script>
 @endsection
 
 

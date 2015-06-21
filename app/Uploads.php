@@ -9,7 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 //class Uploads extends Model implements AuthenticatableContract, CanResetPasswordContract {
 class Uploads extends Model{
 
-	 protected $fillable = ['location', 'image'];
+         protected $table = 'art';
+         public $timestamps = false;
+	 protected $fillable = ['image'];
 
 }
 

@@ -47,3 +47,5 @@ Route::resource('posts', 'ContributeController');
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');
+
+Route::get('location', 'ContributeController@Location');

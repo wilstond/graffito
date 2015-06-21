@@ -22,12 +22,10 @@ class ContributeController extends Controller {
          $this->validate($request,
                 [
                   'location' => 'required',
-                   'Image' => 'required'  
+                   'Image' => 'required', 
+                   'Image' => 'image'
                 ]
                 );
-      /*  $inputs = $request->all();
-        Uploads::create($inputs);*/
-        
         
         $destinationPath = '';
         $filename = '';
@@ -39,13 +37,34 @@ class ContributeController extends Controller {
             $destinationPath = public_path().'/images/graffiti/';
             $filename = $file->getClientOriginalName();
             $file->move($destinationPath, $filename);
+            
+           // $inputs = $request->all();
+           // Uploads::create($inputs);
+            
+//            $upload = new Uploads;
+//            $upload->image = $filename;
+//            $upload->save();
 
-            return "done";
+            return "yess";
             
         }
         else{
             return "nooooo";
         }
+
+    }
+    
+    public function Location(){
+        
+        $latitude = Input::get('latitude');
+        $longitude = Input::get('longitude');
+        
+        $url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&sensor=false";
+
+        $curlData=file_get_contents($url);
+        $address = json_decode($curlData);
+        $a=$address->results[0];
+        return explode(",",$a->formatted_address);
 
     }
  
