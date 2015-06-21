@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-   //function getLocation(){
+   //GEOLOCATION
 
        if(navigator.geolocation){
            navigator.geolocation.getCurrentPosition(success);
@@ -8,16 +8,11 @@ $(document).ready(function(){
        } else {
            alert("Shit not supported");
        }
-   //} 
+
    function success(position){
        var latitude = position.coords.latitude; 
        var longitude = position.coords.longitude;
-       var base = "localhost/graffito/public/";
-       
-//       $.post('location', {latitude:latitude, longitude:longitude}, function(data){              
-//                  console.log(data);
-//              });
-       
+  
        $.ajax({
                     type: "GET",
                     url: 'location',
@@ -28,5 +23,17 @@ $(document).ready(function(){
                     }
                 });
    }
+   
+   var autocomplete;
+   function initialize(){
+       autocomplete = new google.maps.places.Autocomplete(
+               (document.getElementById('location')),
+                {types: ['geocode']});
+       google.maps.event.addListener(autocomplete, 'places_changed', function(){
+           
+       });
+   }
+   
+   google.maps.event.addDomListener(window, 'load', initialize);
     
 });

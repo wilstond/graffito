@@ -49,6 +49,13 @@
 </div> <!--end container div-->
 <script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/contribute.js') }}"></script>
+<script>
+    var autocomplete;
+    function initialize(){
+        alert("hi");
+    }
+    
+</script>
 @endsection
 
 
