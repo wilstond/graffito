@@ -5,6 +5,9 @@
 
 <div class="container">
     <div class="container-fluid">
+        
+        <div id="bg_image"></div>
+             <div id="blackoverlay" ></div>
 
         <br /><br />
         <h1>Contribute to Graffito</h1>
@@ -30,7 +33,23 @@
 
                      {!! Form::label('image', 'Image: ') !!}
 
-                     {!! Form::file('Image') !!}
+<!--                     {!! Form::file('Image') !!}-->
+                     
+                     {!! Form::file('Image', array('onchange' => 'readURL(this);')) !!}
+                     <img src="" id="screenshot" width="50%" height="50%" />
+                        <script type="text/javascript">
+                        function readURL(input) {
+                            if (input.files && input.files[0]) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    $('#screenshot').attr('src', e.target.result);
+                                };
+
+                                reader.readAsDataURL(input.files[0]);
+                            }
+                        }
+                        </script>
 
                 </div>
 
@@ -45,6 +64,11 @@
         @endif 
 
          {!! Form::close() !!}
+         
+    </div><!--end bg-image-->
+</div><!--end black overlay-->
+         
+         
     </div><!--end container-fluid div-->
 </div> <!--end container div-->
 <script src="{{ asset('js/jquery.js') }}"></script>
@@ -54,7 +78,7 @@
     function initialize(){
         alert("hi");
     }
-    
+
 </script>
 @endsection
 
