@@ -22,7 +22,7 @@
                 <div class='form-group'>
 
                      {!! Form::label('location', 'Location: ') !!}
-                     {!! Form::text('location', null,['class' => 'form-control', 'id' => 'location' ,'placeholder' => 'hello']) !!} 
+                     {!! Form::text('location', null,['class' => 'form-control', 'id' => 'location' ,'placeholder' => 'Geolocation loading...']) !!} 
 
                 </div>
 
