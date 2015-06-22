@@ -2,12 +2,16 @@
 
 @section('content')
 
+<header>
+ <div id="bg_image"></div>
+             <div id="blackoverlay" ></div>
+</header>
+
 
 <div class="container">
     <div class="container-fluid">
         
-        <div id="bg_image"></div>
-             <div id="blackoverlay" ></div>
+       
 
         <br /><br />
         <h1>Contribute to Graffito</h1>
@@ -34,7 +38,7 @@
                      {!! Form::label('image', 'Image: ') !!}
                      
                      {!! Form::file('Image', array('onchange' => 'readURL(this);')) !!}
-                     <img src="" id="screenshot"  />
+                     <img src="" id="screenshot" class="img-responsive" />
                         <script type="text/javascript">
                         function readURL(input) {
                             if (input.files && input.files[0]) {
@@ -43,8 +47,7 @@
                                 reader.onload = function (e) {
                                     $('#screenshot').attr('src', e.target.result).css(
                                     {
-                                         'width': '50%',
-                                        'height': '50%'
+                                        
                                     });
                                 };
 
@@ -69,11 +72,7 @@
 
          </main>
 
-         
-    </div><!--end bg-image-->
-</div><!--end black overlay-->
-         
-         
+  
     </div><!--end container-fluid div-->
 </div> <!--end container div-->
 <script src="{{ asset('js/jquery.js') }}"></script>
