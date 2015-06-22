@@ -1,4 +1,11 @@
-//function showImage(imageUrl){
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+
+
+////function showImage(imageUrl){
 //    
 //    
 //    $('#modalwindow').append('<img src="'+imageUrl+'" onClick="hideImage()" />').show();
@@ -13,9 +20,19 @@
 //    $('#modalwindow').hide();
 //}
 
-function showImage(imageUrl){
-    
+function showImage(id, imageUrl){
     
     $('.modal-body').html('<img src="'+imageUrl+'" />');
-    //alert (imageUrl);
+    
+    $.get("viewedpost/"+id, function(data) {
+
+        if(data=="OK"){
+            
+            //alert("View count updated");
+            
+        }
+
+        
+    });
+    
 }

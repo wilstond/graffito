@@ -21,8 +21,9 @@ class AuthController extends Controller {
 	use AuthenticatesAndRegistersUsers;
         
         protected  $redirectTo = 'admin';
+        //protected $redirectPath = '/';
 
-            /**
+        /**
 	 * Create a new authentication controller instance.
 	 *
 	 * @param  \Illuminate\Contracts\Auth\Guard  $auth
