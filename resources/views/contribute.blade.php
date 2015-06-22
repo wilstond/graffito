@@ -32,8 +32,6 @@
                  <div class='form-group'>
 
                      {!! Form::label('image', 'Image: ') !!}
-
-<!--                     {!! Form::file('Image') !!}-->
                      
                      {!! Form::file('Image', array('onchange' => 'readURL(this);')) !!}
                      <img src="" id="screenshot" width="50%" height="50%" />

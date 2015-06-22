@@ -4,14 +4,15 @@
 
 @include('partials.header')
 
-<div class="container">
-    <div class="container-fluid">
-        <main>
-            <br /><br />
+<header>
+<div id="bg_image"></div>
+    <div id="blackoverlay" ></div>
+       
+           
             <h1>Information</h1>
 
-            <div>Graffito allows users to document and share details, images and locations of 
-                street art around the city of Toronto.</div>
+            <p>Graffito allows users to document and share details, images and locations of 
+                street art around the city of Toronto.</p>
 
             <br />
 
@@ -22,22 +23,16 @@
                         media sites and contribute new entries to the application as new works are 
                         physically created around the city. </div>  -->
 
-
-
-            <div>Graffito will take the museum experience outdoors, creating a celebration of 
-                street art, the artists and past works in the city of Toronto. </div>
+            <p>Graffito will take the museum experience outdoors, creating a celebration of 
+                street art, the artists and past works in the city of Toronto. </p>
             <br />
-            <div>Explore existing entries, Contribute new ones, and Explore Toronto. </div>
+            <p>Explore existing entries, Contribute new ones, and Explore Toronto. </p>
 
             <br />
 
-            <div>Contact the developers -> </div>
-
-            </p>
-        </main>
-    </div><!--end container-fluid class-->
-
-</div><!--end content class-->
+            <p>Contact the developers -> </p>
+      
+        </header>
 
 
 
