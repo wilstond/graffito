@@ -31,7 +31,7 @@
 
                      {!! Form::label('image', 'Image: ') !!}
 
-                     {!! Form::file('Image') !!}
+                     {!! Form::file('Image', ['id' => 'image']) !!}
 
                 </div>
 

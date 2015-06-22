@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Uploads;
-use Illuminate\Http\Request;
+use Request;
 use Input;
 
 
@@ -14,43 +14,54 @@ class ContributeController extends Controller {
     }
     
     
-    public function store(Request $request)
+    public function store()
     {
+        if(Request::ajax()) {
+            
+            $latitude = Request::input('latitude');
+            $longitude = Request::input('longitude');
+            $name = Request::input('name');
+
+            
+            
+        }
+        
+        
         
         //validation
         
-         $this->validate($request,
-                [
-                  'location' => 'required',
-                   'Image' => 'required', 
-                   'Image' => 'image'
-                ]
-                );
-        
-        $destinationPath = '';
-        $filename = '';
-        
-        
-        if(Input::hasFile('Image'))
-        {
-            $file = Input::file('Image');
-            $destinationPath = public_path().'/images/graffiti/';
-            $filename = $file->getClientOriginalName();
-            $file->move($destinationPath, $filename);
-            
-           // $inputs = $request->all();
-           // Uploads::create($inputs);
-            
-//            $upload = new Uploads;
-//            $upload->image = $filename;
-//            $upload->save();
-
-            return "yess";
-            
-        }
-        else{
-            return "nooooo";
-        }
+//         $this->validate($request,
+//                [
+//                  'location' => 'required',
+//                   'Image' => 'required', 
+//                   'Image' => 'image'
+//                ]
+//                );
+//        
+//        $destinationPath = '';
+//        $filename = '';
+//        
+//        
+//        if(Input::hasFile('Image'))
+//        {
+//            $file = Input::file('Image');
+//            $destinationPath = public_path().'/images/graffiti/';
+//            $filename = $file->getClientOriginalName();
+//            $file->move($destinationPath, $filename);
+//            
+//           // $inputs = $request->all();
+//           // Uploads::create($inputs);
+//            
+////            $upload = new Uploads;
+////            $upload->image = $filename;
+////            $upload->save();
+//
+//            return "yess";
+//            
+//        }
+//        else{
+//            return "nooooo";
+//        }
 
     }
     
