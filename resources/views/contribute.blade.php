@@ -14,7 +14,7 @@
 
 @include('partials.header')
 
-
+<main>
         <h1>Contribute to Graffito</h1>
 
         {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
@@ -45,6 +45,7 @@
         @endif 
 
          {!! Form::close() !!}
+         </main>
     </div><!--end container-fluid div-->
 </div> <!--end container div-->
 <script src="{{ asset('js/jquery.js') }}"></script>
