@@ -9,19 +9,20 @@ and open the template in the editor.
 */
 
 header {
-/*        width: 100vw;
-        height: 100vw;*/
-        margin: 0;
-        padding: 0;
+    /*        width: 100vw;
+            height: 100vw;*/
+    margin: 0;
+    padding: 0;
+    //background-color: rgba(0,0,0, 0);
 }
 
-    html, body {
+html, body {
     font-size: 1em;
 }
 
 #description h1 {
-font-family: 'Raleway', sans-serif;
-position: absolute;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
     width: 46vw;
     top: 52vh;
     left: 27vw;
@@ -43,7 +44,7 @@ position: absolute;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
-    
+
     z-index: -1;
 }
 
@@ -60,7 +61,7 @@ position: absolute;
 }
 
 #logo {
-    
+
     position: absolute;
     width: 46vw;
     top: 35vh;
@@ -70,9 +71,9 @@ position: absolute;
 
 }
 
-    #logo img {
-        width: 100%;
-    }
+#logo img {
+    width: 100%;
+}
 
 .container-fluid {
     position: relative;
@@ -85,13 +86,25 @@ position: absolute;
     background-color: black;
 }
 
-    #trending ul {
-        margin: 0;
-        padding: 0;
-        //background-color: rgba( 0, 0, 0, 0);
+#trending ul {
+    margin: 0;
+    padding: 0;
+    //background-color: rgba( 0, 0, 0, 0);
 
-    }
-    
-    main {
-        margin-top: 75px;
-    }
+}
+
+main {
+    margin-top: 75px;
+}
+
+#info {
+    display: block;
+    width: 50px;
+    //background-color: darkgray;
+    position: absolute;
+    width: 46vw;
+    top: 35vh;
+    left: 27vw;
+    color: white;
+
+}
