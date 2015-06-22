@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use App\Uploads;
+use App\location;
 use Request;
 use Input;
 
@@ -21,7 +21,18 @@ class ContributeController extends Controller {
             $latitude = Request::input('latitude');
             $longitude = Request::input('longitude');
             $name = Request::input('name');
-
+            $image = Request::input('image');
+            
+            $location = new location;
+            $location->latitude = $latitude;
+            $location->longitude = $longitude;
+            $location->name = $name;
+            $location->save();
+            
+            
+            $destinationPath = public_path().'/images/graffiti/';
+            $filename = $image->getClientOriginalName();
+            $image->move($destinationPath, $filename);
             
             
         }

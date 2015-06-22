@@ -51,7 +51,7 @@ $(document).ready(function () {
 
         event.preventDefault();
         var name = $('#location').val();
-        //  var image = $('#image').val();
+        var image = $('#image').val();
 
         if (name === "") {
             name = $('#location').attr('placeholder');
@@ -77,15 +77,11 @@ $(document).ready(function () {
 //               }
 //             });
 
-                $.post("contribute", {latitude:latitude, longitude:longitude, name:name}).done(function (data) {
+                $.post("contribute", {latitude:latitude, longitude:longitude, name:name, image:image}).done(function (data) {
                     
                     alert(data);
 
                 });
-
-
-
-
 
             }
 
