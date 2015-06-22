@@ -50,7 +50,7 @@
                                 reader.onload = function (e) {
                                     $('#screenshot').attr('src', e.target.result).css(
                                     {
-                                        
+                                        'height' : '380'
                                     });
                                 };
 
