@@ -17,7 +17,7 @@
 
         <h1>Contribute to Graffito</h1>
 
-        {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
+        {!! Form::open(['url' => 'store', 'files' => true])!!} 
 
                 <div class='form-group'>
 
