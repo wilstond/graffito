@@ -34,14 +34,18 @@
                      {!! Form::label('image', 'Image: ') !!}
                      
                      {!! Form::file('Image', array('onchange' => 'readURL(this);')) !!}
-                     <img src="" id="screenshot" width="50%" height="50%" />
+                     <img src="" id="screenshot"  />
                         <script type="text/javascript">
                         function readURL(input) {
                             if (input.files && input.files[0]) {
                                 var reader = new FileReader();
 
                                 reader.onload = function (e) {
-                                    $('#screenshot').attr('src', e.target.result);
+                                    $('#screenshot').attr('src', e.target.result).css(
+                                    {
+                                         'width': '50%',
+                                        'height': '50%'
+                                    });
                                 };
 
                                 reader.readAsDataURL(input.files[0]);
