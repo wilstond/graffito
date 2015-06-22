@@ -39,6 +39,9 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{url('/#trending')}}">Trending</a>
+                    </li>
+                    <li>
                         <a href="{{url('explore')}}">Explore</a>
                     </li>
                     <li>
