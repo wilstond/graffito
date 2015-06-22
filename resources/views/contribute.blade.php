@@ -17,7 +17,8 @@
 
         <h1>Contribute to Graffito</h1>
 
-        {!! Form::open(['url' => 'store', 'files' => true])!!} 
+<!--        {!! Form::open(['url' => 'contribute', 'files' => true])!!} -->
+            {!! Form::open([null , 'files'=>true])!!}
 
                 <div class='form-group'>
 
@@ -35,7 +36,8 @@
                 </div>
 
                  <div class='form-group'>
-                     {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}
+<!--                     {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}-->
+                        {!! Form::submit(null, ['onClick' => checkLocation() ,'class' => 'btn btn-primary'])!!}
                  </div>
 
         @if($errors->any())

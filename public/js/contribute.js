@@ -35,5 +35,9 @@ $(document).ready(function(){
    }
    
    google.maps.event.addDomListener(window, 'load', initialize);
+   
+   function checkLocation(){
+       alert("function called");
+   }
     
 });
