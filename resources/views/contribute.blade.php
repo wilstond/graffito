@@ -17,8 +17,8 @@
 
         <h1>Contribute to Graffito</h1>
 
-<!--        {!! Form::open(['url' => 'contribute', 'files' => true])!!} -->
-            {!! Form::open([null , 'files'=>true])!!}
+           <!--{!! Form::open(['url' => 'contribute', 'files' => true])!!}--> 
+            {!! Form::open([null ,'id'=>'upload_form', 'files'=>true])!!}
 
                 <div class='form-group'>
 
@@ -37,7 +37,7 @@
 
                  <div class='form-group'>
 <!--                     {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}-->
-                        {!! Form::submit(null, ['onClick' => checkLocation() ,'class' => 'btn btn-primary'])!!}
+                        {!! Form::submit(null, ['id' => 'upload_submit','class' => 'btn btn-primary'])!!}
                  </div>
 
         @if($errors->any())
@@ -51,13 +51,6 @@
 </div> <!--end container div-->
 <script src="{{ asset('js/jquery.js') }}"></script>
 <script src="{{ asset('js/contribute.js') }}"></script>
-<script>
-    var autocomplete;
-    function initialize(){
-        alert("hi");
-    }
-    
-</script>
 @endsection
 
 

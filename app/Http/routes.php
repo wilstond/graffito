@@ -40,7 +40,8 @@ Route::get('admin/unpublish/{id}', 'AdminController@unpublish');
 
 Route::get('contribute', 'ContributeController@contribute');
 
-Route::post('contribute', 'ContributeController@store');
+//Route::post('contribute', 'ContributeController@store');
+Route::post('contribute','ContributeController@formData');
 
 Route::get('info', 'WelcomeController@info');
 

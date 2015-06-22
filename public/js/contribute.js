@@ -36,8 +36,26 @@ $(document).ready(function(){
    
    google.maps.event.addDomListener(window, 'load', initialize);
    
-   function checkLocation(){
-       alert("function called");
-   }
+//FORM SUBMIT
+   $('#upload_form').submit(function(event) {
+
+      event.preventDefault();
+
+      var name = $('#location').val(); 
+      
+       if(name === ""){
+           name = $('#location').attr('placeholder');
+       } 
+       
+
+//        $.ajax({
+//            type:"POST",
+//            url: 'contribute', 
+//            data:{},
+//            success: function(data){
+//                alert(data);
+//            }
+//        });
+   });
     
 });

@@ -67,6 +67,6 @@ class ContributeController extends Controller {
         return explode(",",$a->formatted_address);
 
     }
- 
+
 }
 
