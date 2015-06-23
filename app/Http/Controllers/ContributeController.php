@@ -38,7 +38,8 @@ class ContributeController extends Controller {
 
             $art = new art();
             $art->image = $image; 
-            $art->location_id = $location_id;
+          //  $art->location_id = $location_id;
+            $art->location_id = 1;
             $art->view_count = 0;
             $art->approval_status = 1;
             $art->art_status = 1;
