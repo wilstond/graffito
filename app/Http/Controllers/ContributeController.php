@@ -29,17 +29,16 @@ class ContributeController extends Controller {
             $location->longitude = $longitude;
             $location->name = $name;
             $location->save();
-            
+//            $location_id = $location->id;
             
             $destinationPath = public_path().'/images/graffiti/';
             $filename = $image->getClientOriginalName();
             $image->move($destinationPath, $filename);
             
-//           $id = DB::table('location')->orderBy('id', 'desc')->first();
 
             $art = new art();
             $art->image = $image; 
-            $art->location_id = 1;
+            $art->location_id = $location_id;
             $art->view_count = 0;
             $art->approval_status = 1;
             $art->art_status = 1;
