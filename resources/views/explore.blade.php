@@ -4,7 +4,15 @@
 
 @include('partials.header')
 
-<div id="map_canvas">
+<div id="explore">
+    
+    <div id="div-left">
+        <div id="map_canvas"></div>
+    </div>
+    
+    <div id="div-right">
+        
+    </div>
     
 </div>
 
