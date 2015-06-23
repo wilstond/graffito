@@ -23,7 +23,7 @@ class ContributeController extends Controller {
             $name = Request::input('name');
             $image = Request::input('image');
             
-            $location = new location;
+            $location = new location();
             $location->latitude = $latitude;
             $location->longitude = $longitude;
             $location->name = $name;
