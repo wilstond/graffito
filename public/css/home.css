@@ -100,13 +100,35 @@ main {
 
 #info {
     display: block;
-    width: 50px;
+    //width: 50px;
     //background-color: darkgray;
     position: absolute;
     width: 46vw;
     top: 15vh;
-    left: 27vw;
+    left: 32vw;
     color: white;
-    //comment
+    //text-align: center;
+}
 
+#info h1 {
+    display: block;
+    //left: 40%;
+    //text-align: center;
+    //padding-left: 30px;
+}
+
+#info p {
+    width: 500px;
+}
+
+#info a {
+    display: block; 
+    color: white;
+    text-decoration: none;
+    padding: 4px 60px 4px 8px;
+    border: 1px white solid;
+    margin: 30px 0 13px 0;
+    font-size: 80%;
+    width: 200px;
+    //text-align: center;
 }
