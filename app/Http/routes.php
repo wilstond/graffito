@@ -43,6 +43,10 @@ Route::get('contribute', 'ContributeController@contribute');
 Route::post('contribute', 'ContributeController@store');
 //Route::post('contribute','ContributeController@formData');
 
+Route::get('submit', function(){
+    return "hello";
+});
+
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');

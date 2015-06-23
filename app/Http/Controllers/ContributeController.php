@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\location;
+use App\art;
 use Request;
 use Input;
 
@@ -34,6 +35,15 @@ class ContributeController extends Controller {
             $filename = $image->getClientOriginalName();
             $image->move($destinationPath, $filename);
             
+//           $id = DB::table('location')->orderBy('id', 'desc')->first();
+
+            $art = new art();
+            $art->image = $image; 
+            $art->location_id = 1;
+            $art->view_count = 0;
+            $art->approval_status = 1;
+            $art->art_status = 1;
+            $art->save();
             
         }
         
@@ -88,6 +98,10 @@ class ContributeController extends Controller {
         $a=$address->results[0];
         return explode(",",$a->formatted_address);
 
+    }
+    
+    public function submit(){
+        return view('submit');
     }
 
 }
