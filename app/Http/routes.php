@@ -43,6 +43,22 @@ Route::get('contribute', 'ContributeController@contribute');
 Route::post('contribute', 'ContributeController@store');
 //Route::post('contribute','ContributeController@formData');
 
+//Route::post('upload', function(){
+//    if(Input::hasFile('Image'))
+//        {
+//            $file = Input::file('Image');
+//            $destinationPath = public_path().'/images/graffiti/';
+//            $filename = $file->getClientOriginalName();
+//            $file->move($destinationPath, $filename);
+//
+//            return "yess";
+//           
+//        }
+//        else{
+//            return "nooooo";
+//        }
+//});
+
 Route::get('submit', function(){
     return "hello";
 });
