@@ -1,13 +1,17 @@
 @extends('layouts.admin')
 
 @section('content')
+
+
 <header>
     <div id="bg_image"></div>
+    <div id="blackoverlay" ></div>
     
 <!--    <div id="logo">
         <img src="{{ asset('images/graffito_logo.svg') }}" alt="Graffito" />
     </div>-->
 </header>
+@include('partials.header')
     <div class="row login">
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">

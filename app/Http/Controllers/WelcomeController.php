@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
-use App\office;
+use Request;
+use App\art;
 use DB;
 
 class WelcomeController extends Controller {
@@ -23,7 +24,7 @@ class WelcomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('guest');
+		//$this->middleware('guest');
 	}
 
 	/**
@@ -71,8 +72,15 @@ class WelcomeController extends Controller {
             return view('tour');
         }
 
-        public function modal()
+        public function viewedPost($id)
         {
+
+            if(Request::ajax()){
+                $post = art::find($id);
+                $post->view_count = $post->view_count + 1;
+                $post->save();
+                return "OK";
+            }
             
         }
         

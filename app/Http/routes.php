@@ -13,11 +13,6 @@
 
 Route::get('explore', 'MapController@explore');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
-
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
@@ -27,6 +22,8 @@ Route::get('about', 'WelcomeController@about');
 Route::get('contact', 'WelcomeController@contact');
 
 Route::get('products', 'ProductController@products');
+
+Route::get('viewedpost/{id}', 'WelcomeController@viewedPost');
 
 Route::get('admin', 'AdminController@index');
 
@@ -47,3 +44,10 @@ Route::resource('posts', 'ContributeController');
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');
+
+Route::get('location', 'ContributeController@Location');
+
+Route::controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);

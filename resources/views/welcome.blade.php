@@ -33,7 +33,7 @@
         @foreach($trending as $post)
         <li class="col-md-4 col-sm-12 col-xs-12">
 <!--            <a href="#" onClick="showImage('{{ $post->image }}')" ><img src="{{ $post->image }}" class="img-responsive" /></a>-->
-            <img src="{{ $post->image }}" onClick="showImage('{{ $post->image }}')" class="img-responsive" data-toggle="modal" data-target="#myModal" />
+            <img src="{{ $post->image }}" onClick="showImage('{{ $post->id }}','{{ $post->image }}')" class="img-responsive" data-toggle="modal" data-target="#myModal" />
         </li>
         @endforeach
     </ul>
