@@ -25,7 +25,7 @@
     <div id="bg_image"></div>
     <div id="blackoverlay" ></div>
     <div id="info" >
-        <h1>Contribute to Graffito</h1>
+        <h1>Contribute</h1>
 
         {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
 
