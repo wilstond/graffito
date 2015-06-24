@@ -92,7 +92,6 @@ $("#menu-toggle").click(function (e) {
    <script src="{{asset('js/map.js')}}"></script>
    <script src="{{asset('js/modal.js') }}"></script>
    <script src="{{asset('js/contribute.js')}}"></script>
-
-
+   <script src="{{asset('js/main.js')}}"></script>
     </body>
 </html>

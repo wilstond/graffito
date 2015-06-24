@@ -13,14 +13,33 @@ and open the template in the editor.
 }
 
 #div-left {
-    width: 75%;
+    width: 80%;
     float: left;
     height: 100%;
+    position: fixed;
 }
 
 #div-right {
-    width: 24%;
+    width: 20%;
     float: right;
+    margin-top: 60px;
+    padding-top: 10px;
+}
+
+#div-right ul {
+    width: 95%;
+}
+
+#div-right ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#div-right ul li img {
+    width: 100%;
 }
 
 #map_canvas {
@@ -28,4 +47,5 @@ and open the template in the editor.
     height: 90vh;
     z-index: 3;
 }
+
 

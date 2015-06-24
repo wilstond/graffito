@@ -33,8 +33,8 @@ class MapController extends Controller {
                             AND 
                                 rnd_long = -79.61
                         ' ));
-        
-        return view('explore');
+        //return $posts;
+        return view('explore')->with('posts', $posts);
     }
     
 }
