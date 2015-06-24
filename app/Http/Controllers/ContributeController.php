@@ -31,10 +31,9 @@ class ContributeController extends Controller {
             $location->save();
             $location_id = $location->id;
             
-//           $destinationPath = public_path().'/images/graffiti/';
-//           // $filename = $image->getClientOriginalName();
-//            $image->move($destinationPath);
-
+//          $destinationPath = public_path().'/images/graffiti/';
+//           $filename = $image->getClientOriginalName();
+//            $image->move($destinationPath, $image);
 
             $art = new art();
             $art->image = $image; 
