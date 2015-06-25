@@ -13,6 +13,14 @@ and open the template in the editor.
     
 }
 
+#header-mini {
+    z-index: 4;
+}
+
+.hamburg {
+    z-index: 5;
+}
+
 #div-left {
     width: 77%;
     float: left;
