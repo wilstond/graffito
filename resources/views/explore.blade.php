@@ -16,7 +16,7 @@
     <div id="div-right">
 
         <ul>
-
+           
             @foreach($posts as $post)
 
 <!--            <li onClick="showImage('{{ $post->art_id }}','{{ $post->image }}')" data-toggle="tooltip" data-placement="left" title='<img src="{{$post->image}}" style="width: 400px; height: auto" />'>{{ $post->loc_name }}</li>-->
