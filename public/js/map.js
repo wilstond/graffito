@@ -47,19 +47,20 @@ $(document).ready(function () {
 
 
         $.post("getcoordinates", {lat: '0', long: '0'}).done(function (data) {
-            for (i = 0; i < data.length; i++) {
+             
+            for (var i = 0; i < data.length; i++) {
                 $latitude = (data[i].latitude);
                 $longitude = (data[i].longitude);
-                $name = (data[i].loc_name)
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(latitude, longitude),
-                    map: map,
-                    title: name
-                });
-            }
 
-        }
-        );
+              //  var coords = data[i].latitude + "," + data[i].longitude;
+              //  var name = data[i].loc_name;
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng($latitude,$longitude),
+                    map: map,
+                    title: work
+                });               
+            }
+        }); //END AJAX
 
     }
     ;//END INITIALIZE 

@@ -5,6 +5,7 @@
         <title>Graffito – Street Art Toronto</title>
         <link rel="icon" href="{{ asset('images/favicon.ico') }}">
         <meta charset="UTF-8">
+        <meta name="csrf-token" content="{!! csrf_token() !!}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="csrf-token" content="{!! csrf_token() !!}">
         <!-- Latest compiled and minified CSS -->
@@ -23,6 +24,10 @@
         <link href="{{ asset('css/explore.css') }}" type="text/css" rel="stylesheet" >
         
 <link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'> 
+
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{asset('js/contribute.js')}}"></script>
+
 
 
     </head>

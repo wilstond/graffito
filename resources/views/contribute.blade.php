@@ -27,7 +27,8 @@
     <div id="info" >
         <h1>Contribute</h1>
 
-        {!! Form::open(['route' => 'posts.store', 'files' => true])!!} 
+           <!--{!! Form::open(['url' => 'contribute', 'files' => true])!!}--> 
+            {!! Form::open([null ,'id'=>'upload_form', 'files'=>true])!!}
 
                 <div class='form-group'>
 
@@ -59,10 +60,12 @@
                         }
                         </script>
 
+                     {!! Form::file('Image', ['id' => 'image']) !!}
                 </div>
 
                  <div class='form-group'>
-                     {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}
+<!--                     {!! Form::submit('Contribute', ['class' => 'btn btn-primary']) !!}-->
+                        {!! Form::submit('Contribute', ['id' => 'upload_submit','class' => 'btn btn-primary'])!!}
                  </div>
 
         @if($errors->any())
@@ -90,7 +93,6 @@
 @endsection
 
 
-         {!! Form::close() !!}
+    @stop
 
- @endsection
 
