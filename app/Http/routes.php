@@ -37,17 +37,25 @@ Route::get('admin/unpublish/{id}', 'AdminController@unpublish');
 
 Route::get('contribute', 'ContributeController@contribute');
 
-Route::post('upload', 'ContributeController@upload');
+Route::post('contribute', 'ContributeController@store');
 
-Route::resource('posts', 'ContributeController');
+Route::get('contribute/save', 'ContributeController@save');
 
+Route::get('insertdata', 'ContributeController@insertdata');
+
+Route::get('submit', function(){
+    return "hello";
+});
 Route::get('info', 'WelcomeController@info');
 
 Route::get('tour', 'WelcomeController@tour');
 
 Route::get('location', 'ContributeController@Location');
 
+Route::post('getcoordinates', 'MapController@getcoordinates');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
