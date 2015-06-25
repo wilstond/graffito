@@ -47,7 +47,7 @@ $(document).ready(function () {
 
 //-----------------FORM SUBMIT----------------------------//
 
-    $('#upload_form').submit(function (event) {
+    $('#upload_form1').submit(function (event) {
 
         event.preventDefault();
         var name = $('#location').val();
@@ -90,5 +90,10 @@ $(document).ready(function () {
             }
         });
     });
-
+    
+    
+        
+    
+    
 });
+

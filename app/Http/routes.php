@@ -41,6 +41,11 @@ Route::get('admin/unpublish/{id}', 'AdminController@unpublish');
 Route::get('contribute', 'ContributeController@contribute');
 
 Route::post('contribute', 'ContributeController@store');
+
+Route::get('contribute/save', 'ContributeController@save');
+
+Route::get('insertdata', 'ContributeController@insertdata');
+
 //Route::post('contribute','ContributeController@formData');
 
 //Route::post('upload', function(){

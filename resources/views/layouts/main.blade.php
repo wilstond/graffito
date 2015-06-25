@@ -22,6 +22,10 @@
         
 <link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'> 
 
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{asset('js/contribute.js')}}"></script>
+
+
 
     </head>
     <body>
@@ -88,7 +92,7 @@ $("#menu-toggle").click(function (e) {
    <script src="{{asset('js/map.js')}}"></script>
    <script src="{{asset('js/modal.js') }}"></script>
    <script src="{{asset('js/contribute.js')}}"></script>
-
+   
 
     </body>
 </html>
