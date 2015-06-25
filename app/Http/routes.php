@@ -47,7 +47,10 @@ Route::get('tour', 'WelcomeController@tour');
 
 Route::get('location', 'ContributeController@Location');
 
+Route::post('getcoordinates', 'MapController@getcoordinates');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+

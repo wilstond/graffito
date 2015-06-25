@@ -10,14 +10,16 @@ and open the template in the editor.
 
 #explore {
     width: 100%;
+    
 }
 
 #div-left {
-    width: 80%;
+    width: 70%;
     float: left;
     height: 100%;
     position: fixed;
-    z-index: -2;
+    z-index: 2;
+    margin: 3vh 0 0 10vw;
 }
 
 #div-right {
@@ -45,8 +47,36 @@ and open the template in the editor.
 
 #map_canvas {
     width: 100%;
-    height: 90vh;
-    z-index: -3;
+    height: 70vh;
+    z-index: 3;
 }
 
+#blackoverlay {
+    //margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .61);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
+    z-index: -9;
+}
+
+#bg_image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://static.pexels.com/photos/4439/city-art-graffiti-wall.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -10;
+    filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
