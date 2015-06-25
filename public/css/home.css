@@ -85,19 +85,20 @@ html, body {
 }
 
 #trending {
-    //background-color: rgba( 0, 0, 0, 0);
+    
     background-color: black;
+    margin-top: 100vh;
+    
 }
 
 #trending ul {
     margin: 0;
     padding: 0;
-    //background-color: rgba( 0, 0, 0, 0);
+    
 }
 
 #trending li {
-    //height: 30vh;
-    //overflow: hidden;
+    
 }
 
 ::-webkit-scrollbar { 
@@ -110,22 +111,16 @@ main {
 
 #info {
     display: block;
-    //width: 50px;
-    //background-color: darkgray;
     position: absolute;
     width: 46vw;
     top: 15vh;
     left: 32vw;
     color: white;
-    //text-align: center;
 }
 
 #info h1 {
     display: block;
    color: #26BFD4;
-    //left: 40%;
-    //text-align: center;
-    //padding-left: 30px;
 }
 
 
