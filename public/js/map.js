@@ -15,7 +15,7 @@ $(document).ready(function () {
         //SET MAP OPTIONS
         var options = {
             center: myLatlng,
-            zoom: 14,
+            zoom: 12,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             draggable: true
