@@ -93,7 +93,15 @@ html, body {
     margin: 0;
     padding: 0;
     //background-color: rgba( 0, 0, 0, 0);
+}
 
+#trending li {
+    //height: 30vh;
+    //overflow: hidden;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 main {
