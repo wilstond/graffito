@@ -36,7 +36,7 @@ $(document).ready(function () {
                     position: pos,
                     content: 'You are here.'
                 });
-
+                
 
                 map.setCenter(pos);
             }, function () {
@@ -46,6 +46,34 @@ $(document).ready(function () {
             // Browser doesn't support Geolocation
             handleNoGeolocation(false);
         }
+  // -------------------------------------------------------------      
+        //SEARCH BOX TRY//
+       
+//       var searchBox = new google.maps.places.SearchBox(document.getElementById('searchBox'));
+//    //EVENT LISTENER FOR SEARCH BOX
+//    google.maps.event.addListener(searchBox, 'places_changed',function(){
+//
+//        var places = searchBox.getPlaces();
+//        var bounds = new google.maps.LatLngBounds();
+//        var i, place;
+//
+////    //SET MARKER TO SEARCH LOCATION
+////        for(i=0;place=places[i];i++){
+////            console.log(place.geometry.location);
+////            bounds.extend(place.geometry.location);
+////            marker.setPosition(place.geometry.location);
+////        }
+//
+//        map.fitBounds(bounds);
+//        map.setZoom(14); //SET ZOOM FOR NEW LOCATIONS
+//    });
+//    //BIAS SEARCH RESULTS BASED ON WHATS IN CURRENT BOUNDS
+//    google.maps.event.addListener(map, 'bounds_changed', function() {
+//        var bounds = map.getBounds();
+//        searchBox.setBounds(bounds);
+//      });
+     // -------------------------------------------------------------
+  
         //THIS MARKER WORKS                    
 //        var marker = new google.maps.Marker({
 //        position: myLatlng,
@@ -82,6 +110,7 @@ $(document).ready(function () {
             map: map,
             position: new google.maps.LatLng(60, 105),
             content: content
+            
         };
 
         var infowindow = new google.maps.InfoWindow(options);

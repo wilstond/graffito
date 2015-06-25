@@ -9,6 +9,7 @@
 
 
     <div id="div-left">
+        <input id="search" type="text" placeholder="Search Box">
         <div id="map_canvas"></div>
     </div>
 
