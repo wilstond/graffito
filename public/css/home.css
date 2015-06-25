@@ -98,12 +98,13 @@ html, body {
 }
 
 #trending li {
-    
+    overflow-y: hidden;
+    height: 270px;
 }
 
-::-webkit-scrollbar { 
+/*::-webkit-scrollbar { 
     display: none; 
-}
+}*/
 
 main {
     margin-top: 60px;
