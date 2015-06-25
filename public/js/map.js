@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     var map;
+    var marker = [];
 
     function initialize() {
 
@@ -23,12 +24,6 @@ $(document).ready(function () {
         //CREATE NEW MAP OBJECT
         map = new google.maps.Map(mapCanvas, options);
    
-        //THIS MARKER WORKS                    
-        var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'You are here'   
-        });
 
         // TRY HTML5 GEOLOCATION
         if (navigator.geolocation) {
@@ -51,25 +46,28 @@ $(document).ready(function () {
             // Browser doesn't support Geolocation
             handleNoGeolocation(false);
         }
-
+        //THIS MARKER WORKS                    
+//        var marker = new google.maps.Marker({
+//        position: myLatlng,
+//        map: map,
+//        title: 'You are here'   
+//        });
 
         $.post("getcoordinates", {lat: '0', long: '0'}).done(function (data) {
-             
+             console.log(data);
             for (var i = 0; i < data.length; i++) {
-                $latitude = (data[i].latitude);
-                $longitude = (data[i].longitude);
-        
+                var latitude = (data[i].latitude);
+                var longitude = (data[i].longitude);
+                var positions = new google.maps.LatLng(latitude, longitude);
               //  var coords = data[i].latitude + "," + data[i].longitude;
-              //  var name = data[i].loc_name;  
+                var name = data[i].loc_name;  
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng($latitude,$longitude),
+                    position: positions,
                     map: map,
-                    title: work
-                }); 
-
+                    title: name
+                });              
             }
         }); //END AJAX
-
     }
     ;//END INITIALIZE 
 
@@ -92,7 +90,6 @@ $(document).ready(function () {
 
     google.maps.event.addDomListener(window, 'load', initialize);
     
-    marker.setMap(map);
 
 });
 
