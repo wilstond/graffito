@@ -22,6 +22,13 @@ $(document).ready(function () {
 
         //CREATE NEW MAP OBJECT
         map = new google.maps.Map(mapCanvas, options);
+   
+        //THIS MARKER WORKS                    
+        var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'You are here'   
+        });
 
         // TRY HTML5 GEOLOCATION
         if (navigator.geolocation) {
@@ -51,14 +58,15 @@ $(document).ready(function () {
             for (var i = 0; i < data.length; i++) {
                 $latitude = (data[i].latitude);
                 $longitude = (data[i].longitude);
-
+        
               //  var coords = data[i].latitude + "," + data[i].longitude;
-              //  var name = data[i].loc_name;
+              //  var name = data[i].loc_name;  
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng($latitude,$longitude),
                     map: map,
                     title: work
-                });               
+                }); 
+
             }
         }); //END AJAX
 
@@ -83,6 +91,8 @@ $(document).ready(function () {
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+    
+    marker.setMap(map);
 
 });
 
