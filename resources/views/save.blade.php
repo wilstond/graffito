@@ -28,8 +28,6 @@
                 var latitude = results[0].geometry.location.lat();
                 var longitude = results[0].geometry.location.lng();
 
-
-
                 $.ajax({
                     type: "GET",
                     url: "{{url('insertdata')}}",
@@ -42,7 +40,7 @@
                     error: function (data)
                     {
                         //alert("Something went wrong with the database");
-                        $('#success-msg h2').text("Something went wrong. Please try again");
+                        $('#success-msg h2').text("Something went wrong. Please try again...");
                     }
                 });
 

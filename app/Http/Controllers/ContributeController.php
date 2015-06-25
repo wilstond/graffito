@@ -73,12 +73,10 @@ class ContributeController extends Controller {
 
     public function insertdata() {
 
-
         $latitude = Input::get('latitude');
         $longitude = Input::get('longitude');
         $name = Input::get('name');
         $image = Input::get('image');
-
 
         $location = new location();
         $location->latitude = $latitude;
@@ -87,7 +85,6 @@ class ContributeController extends Controller {
         $location->save();
         $location_id = $location->id;
 
-
         $art = new art();
         $art->image = 'images/graffiti/'.$image;
         $art->location_id = $location_id;
@@ -95,11 +92,9 @@ class ContributeController extends Controller {
         $art->approval_status = 1;
         $art->art_status = 1;
         $art->save();
-
         
-        return "ok";
+        return $latitude.' '.$longitude.' '.$name.' '.$image;
     
-        
     }
 
 }
