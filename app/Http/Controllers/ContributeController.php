@@ -39,7 +39,7 @@ class ContributeController extends Controller {
                 [
                   'location' => 'required',
                    'Image' => 'required', 
-//                   'Image' => 'image'
+                   'Image' => 'image'
                 ]
                 );
         
